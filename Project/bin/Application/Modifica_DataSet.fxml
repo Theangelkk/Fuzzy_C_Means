@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller_Modifica_DataSet">
+   <top>
+      <Label mouseTransparent="true" text="Modifica DataSet" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <HBox fx:id="hBox" prefHeight="189.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="189.0" prefWidth="402.0">
+               <children>
+                  <Label text="        Scegli quale Caratteristica Eliminare : ">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <AnchorPane prefHeight="189.0" prefWidth="622.0">
+               <children>
+                  <Button fx:id="Carica_Elim_DS" layoutX="147.0" layoutY="134.0" mnemonicParsing="false" text="Elimina Caratt" />
+                  <Button fx:id="Salva_DS" layoutX="504.0" layoutY="134.0" mnemonicParsing="false" text="Salva DS" />
+                  <Label layoutX="305.0" layoutY="49.0" text="Nome DataSet da Salvare" />
+                  <TextField fx:id="New_NameDS" layoutX="305.0" layoutY="68.0" />
+               </children></AnchorPane>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="Table_DataSet" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

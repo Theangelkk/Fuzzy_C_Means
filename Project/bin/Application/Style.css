@@ -1,0 +1,162 @@
+ #Background_Iniziale
+ {
+	-fx-background-image: url("../Images/BackGround.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center center;
+}
+
+#Fuzzy_Text {
+   -fx-font-size: 73px;
+   -fx-font-family: "Constantia";
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,98) , 6, 0.0 , 0 , 2 );
+}
+
+.Inizia_Cluster{
+  -fx-background-color: white, white;
+  -fx-background-radius: 16.4, 15;
+  -fx-background-insets: -1.4, 0;
+  -fx-border-radius: 15;
+  -fx-border-width: 2;
+  -fx-border-color: dimgrey;
+  -fx-padding: 0;
+  -fx-font-size: 0;
+}
+
+.Inizia_Cluster:focused {
+  -fx-background-color: -fx-focus-color, white;
+}
+
+.Inizia_Cluster:hover {
+  -fx-effect: innershadow(gaussian, blue, 15, 0, 0, 0);
+}
+
+.Title_Page
+{
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,98) , 6, 0.0 , 0 , 2 );
+}
+
+.Nome_DataSet {
+    -fx-font-size: 19pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.Label_Setting {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.button_next {   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+   	-fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button_next:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+.button_next:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+}
+
+.button_next:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_next:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_next:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_next:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_setting {   
+    -fx-border-color: #000000;
+    -fx-border-width: 2;
+   	-fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #000000;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button_setting:hover {
+    -fx-background-color: #0080ff;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+.button_setting:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #000000;
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+}
+
+.button_setting:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_setting:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #808080;
+    -fx-text-fill: white;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_setting:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.button_setting:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}

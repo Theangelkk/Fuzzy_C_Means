@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller_Allert_Message">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="erroreLabel" layoutX="63.0" layoutY="67.0" text="Label" />
+            <Button fx:id="bottoneButton" layoutX="316.0" layoutY="116.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="Clicca" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

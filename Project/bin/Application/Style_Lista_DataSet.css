@@ -1,0 +1,6 @@
+ #Background_Iniziale
+ {
+	-fx-background-image: url("file:/C:/Users/Angelo/Java_Workspace/Progetto_Clustering/src/Images/BackGround.jpg");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center center;
+}

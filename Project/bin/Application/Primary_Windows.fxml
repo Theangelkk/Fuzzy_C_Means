@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller_Primary_WS">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Tutorial">
+              <items>
+                <MenuItem fx:id="Spiegazione" mnemonicParsing="false" text="Spiegazione" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Info">
+            <items>
+              <MenuItem fx:id="Fuzzy_C_Means" mnemonicParsing="false" text="Descrizione..." />
+                  <MenuItem fx:id="Autore" mnemonicParsing="false" text="Autore" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: white; -fx-opacity: 0.5;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="76.0" layoutY="13.0" text="Nome Completo :" />
+            <Label fx:id="nomeCompleto" layoutX="190.0" layoutY="13.0" text="Anonymous" />
+            <Label layoutX="371.0" layoutY="13.0" text="Tempo di Accesso :" />
+            <Label fx:id="TempoAccesso" layoutX="492.0" layoutY="13.0" prefHeight="17.0" prefWidth="156.0" text="NULL" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Inizia_Cluster" layoutX="270.0" layoutY="333.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="161.0" text="INIZIA CLUSTERING">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label fx:id="Fuzzy" layoutX="111.0" layoutY="95.0" text="Fuzzy C Means" textFill="WHITE">
+               <font>
+                  <Font name="Constantia" size="73.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

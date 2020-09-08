@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller_InsertDS">
+   <top>
+      <Label fx:id="Title" mouseTransparent="true" text="Inserimento DataSet" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="94.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="96.0" layoutY="20.0" prefHeight="28.0" prefWidth="166.0" text="DataSet Scelto :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Nome_DS" layoutX="310.0" layoutY="18.0" prefHeight="34.0" prefWidth="127.0" text="Nessun DataSet" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Scegli_DS" layoutX="461.0" layoutY="21.0" mnemonicParsing="false" text="Scegli DataSet" />
+                        <Label layoutX="131.0" layoutY="58.0" prefHeight="28.0" prefWidth="146.0" text="Numero Fenomeni :" textFill="WHITE" />
+                        <Label layoutX="344.0" layoutY="58.0" prefHeight="28.0" prefWidth="165.0" text="Numero Caratteristiche :" textFill="WHITE" />
+                        <Label fx:id="Label_Num_Fen" layoutX="255.0" layoutY="58.0" prefHeight="28.0" prefWidth="62.0" text="0" textFill="WHITE" />
+                        <Label fx:id="Label_Num_Caratt" layoutX="507.0" layoutY="58.0" prefHeight="28.0" prefWidth="62.0" text="0" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="300.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="204.0" fitWidth="256.0" layoutX="36.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/MySQL-Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="314.0" prefHeight="28.0" prefWidth="146.0" text="UserName " textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="314.0" layoutY="59.0" prefHeight="28.0" prefWidth="146.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="314.0" layoutY="114.0" prefHeight="28.0" prefWidth="146.0" text="Nome DataBase" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UserName" layoutX="326.0" layoutY="28.0" prefHeight="25.0" prefWidth="267.0" />
+                  <PasswordField fx:id="Password" layoutX="326.0" layoutY="87.0" prefHeight="25.0" prefWidth="268.0">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </PasswordField>
+                  <TextField fx:id="NomeDB" layoutX="327.0" layoutY="142.0" prefHeight="25.0" prefWidth="267.0" />
+                  <Button fx:id="Avanti_Button" layoutX="603.0" layoutY="234.0" mnemonicParsing="false" text="Avanti" />
+                  <Label layoutX="314.0" layoutY="169.0" prefHeight="28.0" prefWidth="146.0" text="Nome Tabella" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="NomeTabella" layoutX="327.0" layoutY="198.0" prefHeight="25.0" prefWidth="267.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
